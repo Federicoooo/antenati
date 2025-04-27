@@ -1,6 +1,10 @@
+/* Forza tutto il sito a usare Calibri */
+* {
+  font-family: 'Calibri', sans-serif !important;
+}
+
 /* Corpo generale */
 body {
-  font-family: 'Calibri', sans-serif;
   font-size: 12pt;
   color: #333333;
   background-color: #ffffff; /* Bianco pulito */
@@ -18,7 +22,7 @@ p {
   text-align: center;
 }
 
-/* Testi piccoli */
+/* Testo piccolo (es. fonti, note) */
 .small-text {
   font-size: 10pt;
   font-style: italic;
@@ -27,11 +31,11 @@ p {
 /* Indice (TOC) */
 .toc {
   background-color: #f8f8f8;
-  border: 2px solid #4472C4;
+  border: 2px solid #5e3e2f;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
-  font-family: Calibri, sans-serif;
+  font-family: 'Calibri', sans-serif;
   font-size: 16px;
   max-width: 800px;
   margin-left: auto;
@@ -46,7 +50,7 @@ p {
 .toc h2 {
   font-size: 22px;
   margin-bottom: 15px;
-  color: #4472C4;
+  color: #5e3e2f;
   text-align: center;
 }
 
@@ -61,32 +65,41 @@ p {
 
 .toc a {
   text-decoration: none;
-  color: #4472C4;
+  color: #5e3e2f;
 }
 
 .toc a:hover {
   text-decoration: underline;
-  color: #5e3e2f;
+  color: #7a563d;
 }
 
 /* Tabelle */
 table {
-  width: 90%;
+  width: 80%;
   max-width: 900px;
   margin: 2em auto;
-  border: 1px solid #4472C4;
+  border: 1px solid #5e3e2f;
   border-collapse: collapse;
   word-break: break-word;
+  table-layout: auto;
 }
 
 td, th {
-  border: 1px solid #4472C4;
-  padding: 4px 6px;
+  border: 1px solid #5e3e2f;
+  padding: 3px 5px;
   text-align: left;
   vertical-align: middle;
 }
 
-/* Immagini */
+/* Immagini dentro le tabelle */
+table img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* Immagini fuori dalle tabelle */
 img {
   display: block;
   margin: 1em auto;
@@ -97,8 +110,8 @@ img {
 /* Titolo principale (h1) */
 h1 {
   font-size: 34px;
-  color: #4472C4;
-  border: 3px solid #4472C4;
+  color: #5e3e2f;
+  border: 3px solid #5e3e2f;
   padding: 20px 10px;
   text-align: center;
   width: 75%;
@@ -108,8 +121,8 @@ h1 {
 /* Capitoli principali (h2) */
 h2 {
   font-size: 28px;
-  color: #4472C4;
-  border: 2px solid #4472C4;
+  color: #5e3e2f;
+  border: 2px solid #5e3e2f;
   padding: 16px 8px;
   text-align: center;
   width: 75%;
@@ -119,7 +132,7 @@ h2 {
 /* Sottosezioni (h3) */
 h3 {
   font-size: 24px;
-  color: #4472C4;
+  color: #5e3e2f;
   text-align: center;
   margin-top: 2em;
   margin-bottom: 1em;
@@ -128,7 +141,7 @@ h3 {
 /* Sottosottosezioni (h4) */
 h4 {
   font-size: 20px;
-  color: #4472C4;
+  color: #5e3e2f;
   text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1em;
@@ -137,11 +150,11 @@ h4 {
 /* Citazioni intense */
 blockquote, .citazione-intensa {
   background-color: #f8f8f8;
-  border-left: 4px solid #4472C4;
+  border-left: 4px solid #5e3e2f;
   margin: 1em 2em;
   padding: 1em;
   font-style: italic;
-  color: #4472C4;
+  color: #5e3e2f;
 }
 
 /* Titoli immagini o tabelle */
