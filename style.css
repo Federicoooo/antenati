@@ -30,41 +30,40 @@ p {
   color: #666666;
 }
 
-/* Indice (TOC) elegante e centrato */
+/* Indice (TOC) riquadro elegante */
 .toc {
-  background-color: #ffffff;
-  border: 2px solid #4472C4;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  padding: 40px 50px;
-  margin: 3em auto;
+  background-color: #ffffff; /* Bianco puro */
+  border: 3px solid #4472C4; /* Bordo blu spesso */
+  border-radius: 12px; /* Angoli morbidi */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombra elegante */
+  padding: 40px 50px; /* Spaziatura interna */
+  margin: 3em auto; /* Margine esterno */
   font-family: 'Calibri', sans-serif;
   font-size: 16px;
-  max-width: 850px;
-  text-align: left;
+  max-width: 800px; /* Larghezza massima */
+  text-align: left; /* Testo allineato a sinistra */
 }
 
-/* Nasconde numeri pagina nell'indice */
-.toc span {
-  display: none;
-}
-
+/* Titolo dell'indice */
 .toc h2 {
   font-size: 26px;
-  margin-bottom: 25px;
   color: #4472C4;
-  text-align: center; /* titolo indice centrato */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+/* Lista dell'indice */
 .toc ul {
   list-style-type: none;
   padding-left: 0;
 }
 
+/* Ogni voce dell'indice */
 .toc li {
   margin: 10px 0;
 }
 
+/* Link dell'indice */
 .toc a {
   text-decoration: none;
   color: #4472C4;
@@ -73,6 +72,11 @@ p {
 .toc a:hover {
   text-decoration: underline;
   color: #7a563d;
+}
+
+/* Nasconde numeri di pagina */
+.toc span {
+  display: none;
 }
 
 /* Tabelle compatte */
