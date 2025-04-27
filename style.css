@@ -1,0 +1,134 @@
+/* Corpo del documento */
+body {
+  font-family: 'Garamond', 'Georgia', serif;
+  font-size: 12pt;
+  color: #333333;
+  background-color: #fdfbf5;
+  text-align: justify;
+  margin: 2em;
+}
+
+/* Testi piccoli */
+.small-text {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+/* Stile dell'indice */
+.toc {
+  background-color: #f9f6f0;
+  border: 2px solid #4472C4;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: Garamond, serif;
+  font-size: 16px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Rimuove i numeri pagina dall'indice */
+.toc span {
+  display: none;
+}
+
+.toc h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #4472C4;
+  text-align: center;
+}
+
+.toc ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc li {
+  margin: 8px 0;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #5e3e2f;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+  color: #7a563d;
+}
+
+/* Tabelle */
+table {
+  width: 50%;
+  margin: 2em auto;
+  border: 1px solid #4472C4;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #4472C4;
+  padding: 4px 8px;
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap; /* evita l'andare a capo */
+}
+
+/* Immagini */
+img {
+  display: block;
+  margin: 1em auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Titolo principale (h1) */
+h1 {
+  font-size: 32px;
+  color: #4472C4;
+  border: 3px solid #4472C4;
+  padding: 10px;
+  text-align: center;
+  width: 75%;
+  margin: 2em auto 1em auto;
+}
+
+/* Capitoli (h2) */
+h2 {
+  font-size: 26px;
+  color: #4472C4;
+  border: 2px solid #4472C4;
+  padding: 8px;
+  text-align: center;
+  width: 75%;
+  margin: 2em auto 1em auto;
+}
+
+/* Sottosezioni (h3) */
+h3 {
+  font-size: 22px;
+  color: #5b3e2f;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* Sottosottosezioni (h4) */
+h4 {
+  font-size: 18px;
+  color: #5b3e2f;
+  text-align: left;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* Citazioni Intense (tipo "Sezione Ricordi" e Conclusioni) */
+blockquote, .citazione-intensa {
+  background-color: #f9f6f0;
+  border-left: 4px solid #4472C4;
+  margin: 1em 2em;
+  padding: 1em;
+  font-style: italic;
+  color: #5e3e2f;
+}
