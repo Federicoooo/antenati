@@ -7,15 +7,15 @@
 body {
   font-size: 12pt;
   color: #333333;
-  background-color: #ffffff; /* Sfondo bianco */
+  background-color: #ffffff; /* Bianco pulito ovunque */
   text-align: justify;
   margin: 2em;
 }
 
-/* Paragrafi compatti */
+/* Paragrafi molto compatti */
 p {
   margin-top: 0;
-  margin-bottom: 0.4em; /* Circa 6pt */
+  margin-bottom: 0.4em; /* Simile ai 6pt Word */
 }
 
 /* Frontespizio */
@@ -24,14 +24,15 @@ p {
 }
 
 /* Testi piccoli */
-.small-text {
+.small-text, .note {
   font-size: 10pt;
   font-style: italic;
+  color: #555555;
 }
 
 /* Indice (TOC) elegante */
 .toc {
-  background-color: #ffffff; /* Sfondo bianco dell'indice */
+  background-color: #ffffff; /* Sfondo bianco assoluto */
   border: 2px solid #4472C4;
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
@@ -40,7 +41,7 @@ p {
   font-family: 'Calibri', sans-serif;
   font-size: 16px;
   max-width: 800px;
-  text-align: left; /* Testo dentro l'indice a sinistra */
+  text-align: left;
 }
 
 /* Nasconde numeri pagina nell'indice */
@@ -78,7 +79,7 @@ p {
 table {
   width: 80%;
   max-width: 900px;
-  margin: 1em auto;
+  margin: 0.5em auto; /* meno spazio sopra e sotto */
   border: 1px solid #4472C4;
   border-collapse: collapse;
   table-layout: auto;
@@ -89,7 +90,15 @@ td, th {
   padding: 2px 4px;
   text-align: left;
   vertical-align: middle;
-  height: 1em; /* Altezza riga più compatta */
+  height: 1em; /* Altezza riga compatta */
+}
+
+/* Titoli immagini o tabelle */
+.titolo-immagine {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* Immagini dentro tabelle */
@@ -105,6 +114,7 @@ img {
   display: block;
   margin: 1em auto;
   max-width: 100%;
+  min-width: 50%;
   height: auto;
 }
 
@@ -150,18 +160,10 @@ h4 {
 
 /* Citazioni intense */
 blockquote, .citazione-intensa {
-  background-color: #ffffff;
+  background-color: #ffffff; /* Bianco anche su citazioni */
   border-left: 4px solid #4472C4;
   margin: 1em 2em;
   padding: 1em;
   font-style: italic;
   color: #4472C4;
-}
-
-/* Titoli immagini o tabelle */
-.titolo-immagine {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
