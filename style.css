@@ -29,54 +29,52 @@ p {
   font-style: italic;
   color: #666666;
 }
-
-/* Indice (TOC) riquadro elegante */
+/* Stile generale indice */
 .toc {
-  background-color: #ffffff; /* Bianco puro */
-  border: 3px solid #4472C4; /* Bordo blu spesso */
-  border-radius: 12px; /* Angoli morbidi */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombra elegante */
-  padding: 40px 50px; /* Spaziatura interna */
-  margin: 3em auto; /* Margine esterno */
+  background-color: #ffffff;
+  border: 3px solid #4472C4;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  margin: 3em auto;
   font-family: 'Calibri', sans-serif;
   font-size: 16px;
-  max-width: 800px; /* Larghezza massima */
-  text-align: left; /* Testo allineato a sinistra */
+  max-width: 850px;
+  text-align: left;
 }
 
-/* Titolo dell'indice */
+/* Titolo principale dell'indice */
 .toc h2 {
-  font-size: 26px;
+  font-size: 28px;
+  margin-bottom: 40px; /* Maggiore spazio sotto il titolo */
   color: #4472C4;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-/* Lista dell'indice */
-.toc ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-/* Ogni voce dell'indice */
-.toc li {
+/* Lista voci dell'indice */
+.toc p {
   margin: 10px 0;
+  line-height: 1.6; /* Più spazio verticale per leggibilità */
 }
 
-/* Link dell'indice */
+/* Link dentro l'indice */
 .toc a {
   text-decoration: none;
   color: #4472C4;
 }
 
+/* Hover sui link */
 .toc a:hover {
   text-decoration: underline;
   color: #7a563d;
 }
 
-/* Nasconde numeri di pagina */
-.toc span {
-  display: none;
+/* Nasconde numeri di pagina (approccio base) */
+.toc p::after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
 }
 
 /* Tabelle compatte */
