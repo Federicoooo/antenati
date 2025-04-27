@@ -7,7 +7,7 @@
 body {
   font-size: 12pt;
   color: #333333;
-  background-color: #ffffff; /* Bianco puro */
+  background-color: #ffffff;
   text-align: justify;
   margin: 2em;
 }
@@ -15,7 +15,7 @@ body {
 /* Paragrafi compatti */
 p {
   margin-top: 0;
-  margin-bottom: 0.3em; /* ancora più stretto, meno spazio! */
+  margin-bottom: 0.3em; /* margine ridotto */
 }
 
 /* Frontespizio */
@@ -23,37 +23,37 @@ p {
   text-align: center;
 }
 
-/* Testi piccoli (fonti, note, ecc.) */
-.small-text, .note {
+/* Testi piccoli, come note */
+.note {
   font-size: 10pt;
   font-style: italic;
-  color: #555555;
+  color: #666666;
 }
 
-/* Indice TOC elegante */
+/* Indice (TOC) elegante e centrato */
 .toc {
-  background-color: #ffffff; /* bianco puro */
+  background-color: #ffffff;
   border: 2px solid #4472C4;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px 30px;
-  margin: 2em auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 40px auto;
   font-family: 'Calibri', sans-serif;
   font-size: 16px;
   max-width: 800px;
-  text-align: left; /* testo interno a sinistra */
+  text-align: left; /* testo a sinistra */
 }
 
-/* Nasconde i numeri pagina nell'indice */
+/* Nasconde numeri pagina nell'indice */
 .toc span {
   display: none;
 }
 
 .toc h2 {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 20px;
   color: #4472C4;
-  text-align: center; /* titolo indice centrato */
+  text-align: center; /* solo titolo centrato */
 }
 
 .toc ul {
@@ -62,7 +62,7 @@ p {
 }
 
 .toc li {
-  margin: 6px 0;
+  margin: 8px 0;
 }
 
 .toc a {
@@ -79,7 +79,7 @@ p {
 table {
   width: 80%;
   max-width: 900px;
-  margin: 0.5em auto; /* Margine stretto sopra e sotto */
+  margin: 0.5em auto;
   border: 1px solid #4472C4;
   border-collapse: collapse;
   table-layout: auto;
@@ -90,10 +90,10 @@ td, th {
   padding: 2px 4px;
   text-align: left;
   vertical-align: middle;
-  height: 1em; /* altezza compatta */
+  height: 1em;
 }
 
-/* Titoli delle immagini o delle tabelle */
+/* Titoli immagini o tabelle */
 .titolo-immagine {
   text-align: center;
   font-weight: bold;
@@ -109,12 +109,11 @@ table img {
   margin: auto;
 }
 
-/* Immagini fuori da tabelle */
+/* Immagini fuori tabelle */
 img {
   display: block;
   margin: 1em auto;
-  max-width: 100%;
-  min-width: 70%; /* minimo 70% per evitare immagini minuscole */
+  max-width: 80%; /* max 80% ma senza ingrandimenti forzati */
   height: auto;
 }
 
