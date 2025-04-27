@@ -1,4 +1,4 @@
-/* Forza tutto il sito a usare Calibri */
+/* Reset completo dei font */
 * {
   font-family: 'Calibri', sans-serif !important;
 }
@@ -7,15 +7,15 @@
 body {
   font-size: 12pt;
   color: #333333;
-  background-color: #ffffff; /* Bianco pulito ovunque */
+  background-color: #ffffff; /* Bianco puro */
   text-align: justify;
   margin: 2em;
 }
 
-/* Paragrafi molto compatti */
+/* Paragrafi compatti */
 p {
   margin-top: 0;
-  margin-bottom: 0.4em; /* Simile ai 6pt Word */
+  margin-bottom: 0.3em; /* ancora più stretto, meno spazio! */
 }
 
 /* Frontespizio */
@@ -23,28 +23,28 @@ p {
   text-align: center;
 }
 
-/* Testi piccoli */
+/* Testi piccoli (fonti, note, ecc.) */
 .small-text, .note {
   font-size: 10pt;
   font-style: italic;
   color: #555555;
 }
 
-/* Indice (TOC) elegante */
+/* Indice TOC elegante */
 .toc {
-  background-color: #ffffff; /* Sfondo bianco assoluto */
+  background-color: #ffffff; /* bianco puro */
   border: 2px solid #4472C4;
   border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-  padding: 30px;
-  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  margin: 2em auto;
   font-family: 'Calibri', sans-serif;
   font-size: 16px;
   max-width: 800px;
-  text-align: left;
+  text-align: left; /* testo interno a sinistra */
 }
 
-/* Nasconde numeri pagina nell'indice */
+/* Nasconde i numeri pagina nell'indice */
 .toc span {
   display: none;
 }
@@ -53,7 +53,7 @@ p {
   font-size: 22px;
   margin-bottom: 20px;
   color: #4472C4;
-  text-align: center;
+  text-align: center; /* titolo indice centrato */
 }
 
 .toc ul {
@@ -62,7 +62,7 @@ p {
 }
 
 .toc li {
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 .toc a {
@@ -79,7 +79,7 @@ p {
 table {
   width: 80%;
   max-width: 900px;
-  margin: 0.5em auto; /* meno spazio sopra e sotto */
+  margin: 0.5em auto; /* Margine stretto sopra e sotto */
   border: 1px solid #4472C4;
   border-collapse: collapse;
   table-layout: auto;
@@ -90,15 +90,15 @@ td, th {
   padding: 2px 4px;
   text-align: left;
   vertical-align: middle;
-  height: 1em; /* Altezza riga compatta */
+  height: 1em; /* altezza compatta */
 }
 
-/* Titoli immagini o tabelle */
+/* Titoli delle immagini o delle tabelle */
 .titolo-immagine {
   text-align: center;
   font-weight: bold;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
 }
 
 /* Immagini dentro tabelle */
@@ -114,7 +114,7 @@ img {
   display: block;
   margin: 1em auto;
   max-width: 100%;
-  min-width: 50%;
+  min-width: 70%; /* minimo 70% per evitare immagini minuscole */
   height: auto;
 }
 
@@ -160,7 +160,7 @@ h4 {
 
 /* Citazioni intense */
 blockquote, .citazione-intensa {
-  background-color: #ffffff; /* Bianco anche su citazioni */
+  background-color: #ffffff;
   border-left: 4px solid #4472C4;
   margin: 1em 2em;
   padding: 1em;
