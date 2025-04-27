@@ -7,7 +7,7 @@
 body {
   font-size: 12pt;
   color: #333333;
-  background-color: #ffffff; /* Bianco pulito */
+  background-color: #ffffff; /* Sfondo bianco */
   text-align: justify;
   margin: 2em;
 }
@@ -22,7 +22,7 @@ p {
   text-align: center;
 }
 
-/* Testo piccolo (es. fonti, note) */
+/* Testo piccolo */
 .small-text {
   font-size: 10pt;
   font-style: italic;
@@ -31,7 +31,7 @@ p {
 /* Indice (TOC) */
 .toc {
   background-color: #f8f8f8;
-  border: 2px solid #5e3e2f;
+  border: 2px solid #4472C4;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
@@ -50,7 +50,7 @@ p {
 .toc h2 {
   font-size: 22px;
   margin-bottom: 15px;
-  color: #5e3e2f;
+  color: #4472C4;
   text-align: center;
 }
 
@@ -65,7 +65,7 @@ p {
 
 .toc a {
   text-decoration: none;
-  color: #5e3e2f;
+  color: #4472C4;
 }
 
 .toc a:hover {
@@ -78,22 +78,22 @@ table {
   width: 80%;
   max-width: 900px;
   margin: 2em auto;
-  border: 1px solid #5e3e2f;
+  border: 1px solid #4472C4;
   border-collapse: collapse;
-  word-break: break-word;
   table-layout: auto;
 }
 
 td, th {
-  border: 1px solid #5e3e2f;
-  padding: 3px 5px;
+  border: 1px solid #4472C4;
+  padding: 2px 4px;
   text-align: left;
   vertical-align: middle;
+  height: 1em;
 }
 
 /* Immagini dentro le tabelle */
 table img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   margin: auto;
@@ -110,8 +110,8 @@ img {
 /* Titolo principale (h1) */
 h1 {
   font-size: 34px;
-  color: #5e3e2f;
-  border: 3px solid #5e3e2f;
+  color: #4472C4;
+  border: 3px solid #4472C4;
   padding: 20px 10px;
   text-align: center;
   width: 75%;
@@ -121,8 +121,8 @@ h1 {
 /* Capitoli principali (h2) */
 h2 {
   font-size: 28px;
-  color: #5e3e2f;
-  border: 2px solid #5e3e2f;
+  color: #4472C4;
+  border: 2px solid #4472C4;
   padding: 16px 8px;
   text-align: center;
   width: 75%;
@@ -132,7 +132,7 @@ h2 {
 /* Sottosezioni (h3) */
 h3 {
   font-size: 24px;
-  color: #5e3e2f;
+  color: #4472C4;
   text-align: center;
   margin-top: 2em;
   margin-bottom: 1em;
@@ -141,7 +141,7 @@ h3 {
 /* Sottosottosezioni (h4) */
 h4 {
   font-size: 20px;
-  color: #5e3e2f;
+  color: #4472C4;
   text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1em;
@@ -150,11 +150,11 @@ h4 {
 /* Citazioni intense */
 blockquote, .citazione-intensa {
   background-color: #f8f8f8;
-  border-left: 4px solid #5e3e2f;
+  border-left: 4px solid #4472C4;
   margin: 1em 2em;
   padding: 1em;
   font-style: italic;
-  color: #5e3e2f;
+  color: #4472C4;
 }
 
 /* Titoli immagini o tabelle */
