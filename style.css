@@ -12,9 +12,10 @@ body {
   margin: 2em;
 }
 
-/* Paragrafi più compatti */
+/* Paragrafi molto compatti */
 p {
-  margin-bottom: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0.4em; /* Ridotto */
 }
 
 /* Frontespizio */
@@ -28,18 +29,18 @@ p {
   font-style: italic;
 }
 
-/* Indice (TOC) */
+/* Indice (TOC) elegante */
 .toc {
-  background-color: #f8f8f8;
+  background-color: #f9f9f9;
   border: 2px solid #4472C4;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 30px auto;
   font-family: 'Calibri', sans-serif;
   font-size: 16px;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left; /* testo a sinistra dentro */
 }
 
 /* Nasconde numeri pagina nell'indice */
@@ -49,7 +50,7 @@ p {
 
 .toc h2 {
   font-size: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #4472C4;
   text-align: center;
 }
@@ -77,7 +78,7 @@ p {
 table {
   width: 80%;
   max-width: 900px;
-  margin: 2em auto;
+  margin: 1em auto;
   border: 1px solid #4472C4;
   border-collapse: collapse;
   table-layout: auto;
@@ -88,7 +89,7 @@ td, th {
   padding: 2px 4px;
   text-align: left;
   vertical-align: middle;
-  height: 1em;
+  height: 1em; /* Righe compatte */
 }
 
 /* Immagini dentro le tabelle */
@@ -133,7 +134,7 @@ h2 {
 h3 {
   font-size: 24px;
   color: #4472C4;
-  text-align: center;
+  text-align: left;
   margin-top: 2em;
   margin-bottom: 1em;
 }
@@ -142,14 +143,14 @@ h3 {
 h4 {
   font-size: 20px;
   color: #4472C4;
-  text-align: center;
+  text-align: left;
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
 /* Citazioni intense */
 blockquote, .citazione-intensa {
-  background-color: #f8f8f8;
+  background-color: #f9f9f9;
   border-left: 4px solid #4472C4;
   margin: 1em 2em;
   padding: 1em;
