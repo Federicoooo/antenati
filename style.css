@@ -1,4 +1,4 @@
-/* Corpo del documento */
+/* Corpo generale */
 body {
   font-family: 'Garamond', 'Georgia', serif;
   font-size: 12pt;
@@ -8,16 +8,21 @@ body {
   margin: 2em;
 }
 
-/* Testi piccoli */
+/* Sezione frontespizio (prima pagina) */
+.frontespizio {
+  text-align: center;
+}
+
+/* Testo piccolo (es. fonti, citazioni particolari) */
 .small-text {
   font-size: 10pt;
   font-style: italic;
 }
 
-/* Stile dell'indice */
+/* Indice - TOC */
 .toc {
   background-color: #f9f6f0;
-  border: 2px solid #4472C4;
+  border: 2px solid #5e3e2f;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
@@ -28,7 +33,7 @@ body {
   margin-right: auto;
 }
 
-/* Rimuove i numeri pagina dall'indice */
+/* Nascondi i numeri di pagina nell'indice */
 .toc span {
   display: none;
 }
@@ -36,7 +41,7 @@ body {
 .toc h2 {
   font-size: 22px;
   margin-bottom: 15px;
-  color: #4472C4;
+  color: #5e3e2f;
   text-align: center;
 }
 
@@ -61,10 +66,12 @@ body {
 
 /* Tabelle */
 table {
-  width: 50%;
+  width: 90%;
+  max-width: 900px;
   margin: 2em auto;
   border: 1px solid #4472C4;
   border-collapse: collapse;
+  word-break: break-word;
 }
 
 td, th {
@@ -72,7 +79,6 @@ td, th {
   padding: 4px 8px;
   text-align: left;
   vertical-align: top;
-  white-space: nowrap; /* evita l'andare a capo */
 }
 
 /* Immagini */
@@ -86,20 +92,20 @@ img {
 /* Titolo principale (h1) */
 h1 {
   font-size: 32px;
-  color: #4472C4;
-  border: 3px solid #4472C4;
-  padding: 10px;
+  color: #5e3e2f; /* Marrone elegante */
+  border: 3px solid #5e3e2f;
+  padding: 20px 10px;
   text-align: center;
   width: 75%;
   margin: 2em auto 1em auto;
 }
 
-/* Capitoli (h2) */
+/* Capitoli principali (h2) */
 h2 {
   font-size: 26px;
-  color: #4472C4;
-  border: 2px solid #4472C4;
-  padding: 8px;
+  color: #5e3e2f; /* Marrone elegante */
+  border: 2px solid #5e3e2f;
+  padding: 16px 8px;
   text-align: center;
   width: 75%;
   margin: 2em auto 1em auto;
@@ -108,7 +114,7 @@ h2 {
 /* Sottosezioni (h3) */
 h3 {
   font-size: 22px;
-  color: #5b3e2f;
+  color: #5e3e2f;
   text-align: left;
   margin-top: 2em;
   margin-bottom: 1em;
@@ -117,18 +123,26 @@ h3 {
 /* Sottosottosezioni (h4) */
 h4 {
   font-size: 18px;
-  color: #5b3e2f;
+  color: #5e3e2f;
   text-align: left;
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
-/* Citazioni Intense (tipo "Sezione Ricordi" e Conclusioni) */
+/* Citazioni intense (es. Sezione Ricordi) */
 blockquote, .citazione-intensa {
   background-color: #f9f6f0;
-  border-left: 4px solid #4472C4;
+  border-left: 4px solid #5e3e2f;
   margin: 1em 2em;
   padding: 1em;
   font-style: italic;
   color: #5e3e2f;
+}
+
+/* Titoli delle immagini o tabelle */
+.titolo-immagine {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
