@@ -15,7 +15,8 @@ body {
 /* Paragrafi compatti */
 p {
   margin-top: 0;
-  margin-bottom: 0.3em; /* margine stretto */
+  margin-bottom: 0.3em;
+  line-height: 1.4; /* Migliore leggibilità generale */
 }
 
 /* Frontespizio */
@@ -29,13 +30,14 @@ p {
   font-style: italic;
   color: #666666;
 }
-/* Stile generale indice */
+
+/* Indice (TOC) elegante */
 .toc {
   background-color: #ffffff;
   border: 3px solid #4472C4;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  padding: 40px 50px;
+  padding: 20px 50px 40px 50px; /* meno padding sopra */
   margin: 3em auto;
   font-family: 'Calibri', sans-serif;
   font-size: 16px;
@@ -46,15 +48,15 @@ p {
 /* Titolo principale dell'indice */
 .toc h2 {
   font-size: 28px;
-  margin-bottom: 40px; /* Maggiore spazio sotto il titolo */
   color: #4472C4;
   text-align: center;
+  margin-bottom: 40px; /* stacco maggiore dal resto */
 }
 
-/* Lista voci dell'indice */
+/* Liste e paragrafi dentro l'indice */
 .toc p {
-  margin: 10px 0;
-  line-height: 1.6; /* Più spazio verticale per leggibilità */
+  margin: 12px 0; /* margine aumentato per capitoli */
+  line-height: 1.6; /* più leggibile */
 }
 
 /* Link dentro l'indice */
@@ -69,11 +71,11 @@ p {
   color: #7a563d;
 }
 
-/* Nasconde numeri di pagina (approccio base) */
+/* Tentativo di nascondere numeri pagina finali */
 .toc p::after {
   content: "";
-  display: block;
-  height: 0;
+  display: inline-block;
+  width: 0;
   overflow: hidden;
 }
 
@@ -127,7 +129,7 @@ h1 {
   padding: 20px 10px;
   text-align: center;
   width: 75%;
-  margin: 2em auto 1em auto;
+  margin: 3em auto 2em auto; /* margini aumentati */
 }
 
 /* Capitoli principali (h2) */
@@ -138,7 +140,7 @@ h2 {
   padding: 16px 8px;
   text-align: center;
   width: 75%;
-  margin: 2em auto 1em auto;
+  margin: 2.5em auto 1.5em auto; /* margine aumentato */
 }
 
 /* Sottosezioni (h3) */
