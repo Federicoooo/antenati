@@ -56,8 +56,8 @@ p {
 
 /* Liste e paragrafi dentro l'indice */
 .toc p {
-  margin: 14px 0; /* Stacco maggiore tra i paragrafi */
-  line-height: 1.7; /* Più arioso */
+  margin: 12px 0; /* Stacco maggiore tra i paragrafi */
+  line-height: 1.5; /* Più arioso */
 }
 
 /* Link dentro l'indice */
