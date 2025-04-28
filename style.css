@@ -50,19 +50,25 @@ p {
   font-size: 28px;
   color: #4472C4;
   text-align: center;
-  margin-bottom: 40px; /* stacco maggiore dal resto */
+  margin-top: 0;
+  margin-bottom: 20px; /* Abbassato un po' */
 }
 
 /* Liste e paragrafi dentro l'indice */
 .toc p {
-  margin: 12px 0; /* margine aumentato per capitoli */
-  line-height: 1.6; /* più leggibile */
+  margin: 14px 0; /* Stacco maggiore tra i paragrafi */
+  line-height: 1.7; /* Più arioso */
 }
 
 /* Link dentro l'indice */
 .toc a {
   text-decoration: none;
   color: #4472C4;
+  display: inline-block;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Hover sui link */
@@ -71,13 +77,6 @@ p {
   color: #7a563d;
 }
 
-/* Tentativo di nascondere numeri pagina finali */
-.toc p::after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  overflow: hidden;
-}
 
 /* Tabelle compatte */
 table {
