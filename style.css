@@ -116,7 +116,9 @@ table img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: auto;
+  margin: 0.5em auto; /* leggero spazio sopra/sotto */
+  padding: 2px;
+  box-sizing: border-box;
 }
 
 /* Immagini fuori da tabelle */
