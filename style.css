@@ -176,3 +176,16 @@ blockquote, .citazione-intensa {
   font-style: italic;
   color: #4472C4;
 }
+
+/* Gestione tabelle su smartphone: scroll orizzontale se necessario */
+@media screen and (max-width: 600px) {
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    width: 100%;
+    min-width: 500px; /* o quanto basta per evitare il wrap delle celle */
+  }
+}
