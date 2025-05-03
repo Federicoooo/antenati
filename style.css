@@ -78,28 +78,25 @@ p {
 }
 
 
-/* Tabelle compatte e responsive */
+/* Tabelle compatte - compatibili con Word e responsive senza effetti collaterali */
 table {
   width: 100%;
   max-width: 900px;
   margin: 0.5em auto;
-  border: 1px solid #4472C4;
   border-collapse: collapse;
   table-layout: auto;
-  overflow-x: auto;
-  display: block;
-  font-size: 1em; /* PC: testo normale */
+  font-size: 1em; /* Testo leggibile su PC */
 }
 
 td, th {
-  border: 1px solid #4472C4;
   padding: 2px 4px;
   text-align: left;
   vertical-align: middle;
   height: 1em;
+  /* Rimuovo bordi CSS: restano quelli definiti da Word inline (neri) */
 }
 
-/* Smartphone: font leggermente ridotto */
+/* Solo su smartphone: testo leggermente più piccolo */
 @media screen and (max-width: 600px) {
   table {
     font-size: 0.85em;
