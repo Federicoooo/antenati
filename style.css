@@ -80,12 +80,12 @@ p {
 
 /* Tabelle compatte - compatibili con Word e responsive senza effetti collaterali */
 table {
-  width: 100%;
-  max-width: 900px;
+  width: auto;
+  max-width: 90%;
   margin: 0.5em auto;
   border-collapse: collapse;
   table-layout: auto;
-  font-size: 1em; /* Testo leggibile su PC */
+  font-size: 1em;
 }
 
 td, th {
@@ -113,7 +113,7 @@ td, th {
 
 /* Immagini dentro le tabelle */
 table img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   margin: auto;
@@ -134,7 +134,7 @@ h1 {
   border: 3px solid #4472C4;
   padding: 20px 10px;
   text-align: center;
-  width: 75%;
+  width: 80%;
   margin: 3em auto 2em auto; /* margini aumentati */
 }
 
@@ -145,7 +145,7 @@ h2 {
   border: 2px solid #4472C4;
   padding: 16px 8px;
   text-align: center;
-  width: 75%;
+  width: 80%;
   margin: 2.5em auto 1.5em auto; /* margine aumentato */
 }
 
