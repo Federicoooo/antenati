@@ -81,7 +81,7 @@ p {
 /* Tabelle compatte - compatibili con Word e responsive senza effetti collaterali */
 table {
   width: auto;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0.5em auto;
   border-collapse: collapse;
   table-layout: auto;
