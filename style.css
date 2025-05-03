@@ -78,14 +78,17 @@ p {
 }
 
 
-/* Tabelle compatte */
+/* Tabelle compatte e responsive */
 table {
-  width: 80%;
+  width: 100%;
   max-width: 900px;
   margin: 0.5em auto;
   border: 1px solid #4472C4;
   border-collapse: collapse;
   table-layout: auto;
+  overflow-x: auto;
+  display: block;
+  font-size: 1em; /* PC: testo normale */
 }
 
 td, th {
@@ -94,6 +97,13 @@ td, th {
   text-align: left;
   vertical-align: middle;
   height: 1em;
+}
+
+/* Smartphone: font leggermente ridotto */
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 0.85em;
+  }
 }
 
 /* Titoli immagini o tabelle */
