@@ -9,7 +9,7 @@ body {
   color: #333333;
   background-color: #ffffff;
   text-align: justify;
-  margin: 2em;
+  margin: 3em;
 }
 
 /* Paragrafi compatti */
@@ -169,10 +169,6 @@ h4 {
   margin-bottom: 0.6em;
 }
 
-/* Quando un h4 è preceduto da un paragrafo con margine sinistro (spazio inserito da Word) */
-p[style*="margin-left"] + h4 {
-  margin-top: 0.2em;
-}
 
 /* Citazioni intense */
 blockquote, .citazione-intensa {
