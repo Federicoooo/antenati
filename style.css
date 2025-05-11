@@ -116,7 +116,7 @@ table img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0.5em auto; /* leggero spazio sopra/sotto */
+  margin: 0.3em auto; /* leggero spazio sopra/sotto */
   padding: 2px;
   box-sizing: border-box;
 }
@@ -125,13 +125,13 @@ table img {
 img {
   display: block;
   margin: 1em auto;
-  max-width: 70%; /* ridotte rispetto all'80% precedente */
+  max-width: 60%; /* rimpicciolite ancora leggermente */
   height: auto;
 }
 
 /* Solo immagini base64 FUORI dalle tabelle */
 body > p > img[src^="data:image"] {
-  max-width: 70%; /* rimpicciolite ancora leggermente */
+  max-width: 60%; /* rimpicciolite ancora leggermente */
   width: auto;
   height: auto;
   margin: 1.5em auto;
