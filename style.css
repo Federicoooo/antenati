@@ -129,6 +129,14 @@ img {
   height: auto;
 }
 
+img[src^="data:image"] {
+  max-width: 90vw;
+  width: 90vw;
+  height: auto;
+  display: block;
+  margin: 1.5em auto;
+}
+
 /* Titolo principale (h1) */
 h1 {
   font-size: 34px;
