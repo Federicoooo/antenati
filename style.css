@@ -113,30 +113,30 @@ td, th {
 
 /* Immagini dentro le tabelle */
 table img {
-  max-width: 100%;
-  height: auto;
   display: block;
-  margin: 0.3em auto; /* leggero spazio sopra/sotto */
+  margin: 0.5em auto;
+  max-width: 95%;       /* leggermente più grandi */
+  height: auto;
   padding: 2px;
   box-sizing: border-box;
 }
 
-/* Immagini fuori da tabelle (normali e base64) */
+/* Immagini fuori da tabelle */
 img {
   display: block;
   margin: 1em auto;
-  max-width: 50%; /* rimpicciolite ancora leggermente */
+  max-width: 500px;     /* meno sgranate su desktop */
+  width: 100%;          /* responsive su mobile */
   height: auto;
 }
 
-/* Solo immagini base64 FUORI dalle tabelle */
+/* Solo immagini base64 fuori da tabelle */
 body > p > img[src^="data:image"] {
-  max-width: 50%; /* rimpicciolite ancora leggermente */
-  width: auto;
+  max-width: 500px;
+  width: 100%;
   height: auto;
   margin: 1.5em auto;
 }
-
 
 /* Titolo principale (h1) */
 h1 {
