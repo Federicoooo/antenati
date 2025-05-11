@@ -169,8 +169,8 @@ h4 {
   margin-bottom: 0.6em;
 }
 
-/* Se h4 è preceduto da un paragrafo vuoto, riduci lo spazio */
-p:empty + h4 {
+/* Quando un h4 è preceduto da un paragrafo con margine sinistro (spazio inserito da Word) */
+p[style*="margin-left"] + h4 {
   margin-top: 0.2em;
 }
 
