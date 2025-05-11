@@ -169,6 +169,11 @@ h4 {
   margin-bottom: 0.6em;
 }
 
+/* Se h4 è preceduto da un paragrafo vuoto, riduci lo spazio */
+p:empty + h4 {
+  margin-top: 0.2em;
+}
+
 /* Citazioni intense */
 blockquote, .citazione-intensa {
   background-color: #ffffff;
