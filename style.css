@@ -113,10 +113,10 @@ td, th {
 
 /* Immagini dentro le tabelle */
 table img {
-  display: block;
-  margin: 0.5em auto;
-  max-width: 95%;       /* leggermente più grandi */
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0.5em auto; /* leggero spazio sopra/sotto */
   padding: 2px;
   box-sizing: border-box;
 }
@@ -125,18 +125,10 @@ table img {
 img {
   display: block;
   margin: 1em auto;
-  max-width: 300px;     /* meno sgranate su desktop */
-  width: 100%;          /* responsive su mobile */
+  max-width: 80%;
   height: auto;
 }
 
-/* Solo immagini base64 fuori da tabelle */
-body > p > img[src^="data:image"] {
-  max-width: 500px;
-  width: 100%;
-  height: auto;
-  margin: 1.5em auto;
-}
 
 /* Titolo principale (h1) */
 h1 {
