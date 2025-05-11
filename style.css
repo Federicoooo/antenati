@@ -125,7 +125,7 @@ table img {
 img {
   display: block;
   margin: 1em auto;
-  max-width: 500px;     /* meno sgranate su desktop */
+  max-width: 300px;     /* meno sgranate su desktop */
   width: 100%;          /* responsive su mobile */
   height: auto;
 }
