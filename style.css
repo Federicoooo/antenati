@@ -137,16 +137,6 @@ body > p > img[src^="data:image"] {
   margin: 1.5em auto;
 }
 
-/* Immagini dentro le tabelle */
-table img {
-  max-width: 100%;
-  width: 100%;      /* forza l'immagine a riempire la cella */
-  height: auto;
-  display: block;
-  margin: 0.3em auto;
-  padding: 2px;
-  box-sizing: border-box;
-}
 
 /* Titolo principale (h1) */
 h1 {
@@ -155,7 +145,7 @@ h1 {
   border: 3px solid #4472C4;
   padding: 20px 10px;
   text-align: center;
-  width: 80%;
+  width: 75%;
   margin: 2em auto 1em auto;
 }
 
@@ -166,7 +156,7 @@ h2 {
   border: 2px solid #4472C4;
   padding: 16px 8px;
   text-align: center;
-  width: 80%;
+  width: 75%;
   margin: 1.8em auto 1em auto;
 }
 
