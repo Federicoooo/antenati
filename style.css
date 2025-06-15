@@ -1,3 +1,8 @@
+/* Reset completo dei font */
+* {
+  font-family: 'Calibri', sans-serif !important;
+}
+
 /* Corpo generale - MODIFICATO */
 body {
   font-size: 12pt;
@@ -17,16 +22,110 @@ body {
   box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Ombra leggera */
 }
 
-/* Su schermi piccoli */
-@media screen and (max-width: 768px) {
-  .container, main, article {
-    max-width: 100%;
-    padding: 10px;
-    box-shadow: none;
-  }
+/* Paragrafi compatti */
+p {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  line-height: 1.4;
 }
 
-/* Immagini responsive - MODIFICATO */
+/* Frontespizio */
+.frontespizio {
+  text-align: center;
+}
+
+/* Testi piccoli, come note */
+.note {
+  font-size: 10pt;
+  font-style: italic;
+  color: #666666;
+}
+
+/* Indice (TOC) elegante */
+.toc {
+  background-color: #ffffff;
+  border: 3px solid #4472C4;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px 50px 40px 50px;
+  margin: 3em auto;
+  font-family: 'Calibri', sans-serif;
+  font-size: 16px;
+  max-width: 850px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+/* Titolo principale dell'indice */
+.toc h2 {
+  font-size: 28px;
+  color: #4472C4;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Liste e paragrafi dentro l'indice */
+.toc p {
+  margin: 10px 0; 
+  line-height: 1.2; 
+}
+
+/* Link dentro l'indice */
+.toc a {
+  text-decoration: none;
+  color: #4472C4;
+  display: inline-block;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hover sui link */
+.toc a:hover {
+  text-decoration: underline;
+  color: #7a563d;
+}
+
+/* Tabelle compatte - MODIFICATO */
+table {
+  width: auto;
+  max-width: 100%;
+  margin: 0.5em auto;
+  border-collapse: collapse;
+  table-layout: auto;
+  font-size: 1em;
+  display: table; /* Importante per centratura */
+}
+
+td, th {
+  padding: 2px 4px;
+  text-align: left;
+  vertical-align: middle;
+  height: 1em;
+}
+
+/* Titoli immagini o tabelle */
+.titolo-immagine {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* Immagini dentro le tabelle */
+table img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5em auto;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+/* Immagini fuori da tabelle - MODIFICATO */
 img {
   display: block;
   margin: 1em auto;
@@ -34,43 +133,86 @@ img {
   height: auto;
 }
 
-/* Tabelle responsive - MODIFICATO */
-table {
-  width: 100%; /* Era auto */
-  max-width: 100%;
-  margin: 0.5em auto;
-  border-collapse: collapse;
-  table-layout: auto;
-  font-size: 1em;
-  overflow-x: auto; /* Scroll orizzontale se necessario */
-  display: block;
-}
-
-/* Wrapper per tabelle - NUOVO */
-.table-wrapper {
-  overflow-x: auto;
-  margin: 1em 0;
-}
-
-/* Titoli centrati nel contenitore - MODIFICATO */
+/* Titolo principale (h1) - MODIFICATO */
 h1 {
   font-size: 34px;
   color: #4472C4;
   border: 3px solid #4472C4;
   padding: 20px 10px;
   text-align: center;
-  width: 100%; /* Era 75% */
-  max-width: 600px; /* Limita la larghezza */
+  width: 90%;
+  max-width: 700px;
   margin: 2em auto 1em auto;
+  box-sizing: border-box;
 }
 
+/* Capitoli principali (h2) - MODIFICATO */
 h2 {
   font-size: 28px;
   color: #4472C4;
   border: 2px solid #4472C4;
   padding: 16px 8px;
   text-align: center;
-  width: 100%; /* Era 75% */
-  max-width: 600px; /* Limita la larghezza */
+  width: 85%;
+  max-width: 650px;
   margin: 1.8em auto 1em auto;
+  box-sizing: border-box;
+}
+
+/* Sottosezioni (h3) */
+h3 {
+  font-size: 24px;
+  color: #4472C4;
+  text-align: left;
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+/* Sottosottosezioni (h4) */
+h4 {
+  font-size: 20px;
+  color: #4472C4;
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom: 0.6em;
+}
+
+/* Citazioni intense */
+blockquote, .citazione-intensa {
+  background-color: #ffffff;
+  border-left: 4px solid #4472C4;
+  margin: 1em 2em;
+  padding: 1em;
+  font-style: italic;
+  color: #4472C4;
+}
+
+/* Media query per dispositivi mobili - NUOVO */
+@media screen and (max-width: 768px) {
+  .container, main, article {
+    max-width: 100%;
+    padding: 10px;
+    box-shadow: none;
+  }
+  
+  h1, h2 {
+    width: 95%;
+    max-width: none;
+  }
+  
+  .toc {
+    padding: 15px 20px 25px 20px;
+    margin: 1em auto;
+  }
+  
+  table {
+    font-size: 0.85em;
+  }
+}
+
+/* Solo su smartphone molto piccoli */
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 0.85em;
+  }
 }
