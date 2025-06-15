@@ -17,7 +17,7 @@ body {
 .container, main, article {
   max-width: 900px; /* Larghezza massima contenuto */
   margin: 0 auto; /* Centra il contenuto */
-  padding: 20px; /* Padding interno */
+  padding: 40px; /* Padding interno */
   background-color: #ffffff; /* Sfondo bianco per il contenuto */
   box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Ombra leggera */
 }
