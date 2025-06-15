@@ -4834,4 +4834,15 @@ proposito, spesso, resta solo un’intenzione.</font></p>
 
 	</p>
 </div>
+<script>
+// Avvolge tutto il contenuto in un container se non esiste
+if (!document.querySelector('.container, main, article')) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'container';
+    while (document.body.firstChild) {
+        wrapper.appendChild(document.body.firstChild);
+    }
+    document.body.appendChild(wrapper);
+}
+</script>
 </body></html>
