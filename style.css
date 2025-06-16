@@ -8,6 +8,9 @@ body {
   font-size: 12pt;
   color: #333333;
   background-color: #f5f5f5; /* Sfondo grigio chiaro */
+  background-image: url("sfondo.jpg");
+  background-repeat: repeat; /* o 'no-repeat' se non vuoi che si ripeta */
+  background-size: auto; /* o 'cover' per coprire tutto */
   text-align: justify;
   margin: 0; /* Rimuovi margini */
   padding: 0;
