@@ -9,9 +9,9 @@ body {
   color: #333333;
   background-color: #f5f5f5; /* Sfondo grigio chiaro */
   background-image: url("sfondo.jpg");
-  background-size: contain; /* AGGIUNGI QUESTO - mostra l'immagine intera */
-  background-repeat: repeat; /* AGGIUNGI QUESTO - non ripetere */
-  background-position: center; /* AGGIUNGI QUESTO - centra l'immagine */
+  background-size: contain; /*  mostra l'immagine intera */
+  background-repeat: repeat; /*  non ripetere */
+  background-position: center; /*  centra l'immagine */
   text-align: justify;
   margin: 0; /* Rimuovi margini */
   padding: 0;
@@ -21,7 +21,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(255, 255, 255, 0.96);
   box-shadow: 
     0 0 30px rgba(0,0,0,0.3),
     inset 0 0 120px rgba(139, 69, 19, 0.1),
