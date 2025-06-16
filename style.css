@@ -9,8 +9,9 @@ body {
   color: #333333;
   background-color: #f5f5f5; /* Sfondo grigio chiaro */
   background-image: url("sfondo.jpg");
-  background-repeat: repeat; /* o 'no-repeat' se non vuoi che si ripeta */
-  background-size: auto; /* o 'cover' per coprire tutto */
+  background-size: contain; /* AGGIUNGI QUESTO - mostra l'immagine intera */
+  background-repeat: no-repeat; /* AGGIUNGI QUESTO - non ripetere */
+  background-position: center; /* AGGIUNGI QUESTO - centra l'immagine */
   text-align: justify;
   margin: 0; /* Rimuovi margini */
   padding: 0;
