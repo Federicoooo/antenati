@@ -20,7 +20,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.85);
   box-shadow: 
     0 0 30px rgba(0,0,0,0.3),
     inset 0 0 120px rgba(139, 69, 19, 0.1),
@@ -63,7 +63,7 @@ p {
 
 /* Indice (TOC) elegante */
 .toc {
-  background-color: transparent; /* Stesso livello di opacità */
+  background-color: #ffffff;
   border: 3px solid #4472C4;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -126,9 +126,6 @@ td, th {
   vertical-align: middle;
   height: 1em;
 }
-
-table, td, th {
-  background-color: rgba(255, 255, 255, 0.95) !important; / Stesso livello di opacità /
 
 /* Titoli immagini o tabelle */
 .titolo-immagine {
