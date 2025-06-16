@@ -16,13 +16,30 @@ body {
   padding: 0;
 }
 
-/* Contenitore principale - NUOVO */
 .container, main, article {
-  max-width: 900px; /* Larghezza massima contenuto */
-  margin: 0 auto; /* Centra il contenuto */
-  padding: 40px; /* Padding interno */
-  background-color: #ffffff; /* Sfondo bianco per il contenuto */
-  box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Ombra leggera */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 
+    0 0 30px rgba(0,0,0,0.3),
+    inset 0 0 120px rgba(139, 69, 19, 0.1),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(139, 69, 19, 0.2);
+  border-radius: 8px;
+  position: relative;
+}
+
+.container::before, main::before, article::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(139, 69, 19, 0.05);
+  border-radius: 10px;
+  z-index: -1;
 }
 
 /* Paragrafi compatti */
