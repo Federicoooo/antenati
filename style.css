@@ -63,7 +63,7 @@ p {
 
 /* Indice (TOC) elegante */
 .toc {
-  background-color: rgba(255, 255, 255, 0.95) !important; /* Stesso livello di opacità */
+  background-color: transparent; /* Stesso livello di opacità */
   border: 3px solid #4472C4;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
