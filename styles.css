@@ -1,0 +1,560 @@
+﻿:root{
+  --bg:#f7f4ee;
+  --paper:#fffdf9;
+  --ink:#1f2328;
+  --muted:#5c6670;
+  --line:#ddd4c7;
+  --accent:#7a3e2b;
+  --accent-soft:#efe2d4;
+  --max: 950px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font:18px/1.7 Georgia, "Times New Roman", serif;
+  color:var(--ink);
+
+  background-image:url("sfondo.jpg");
+  background-size:contain;
+  background-repeat:repeat;
+  background-position:center;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent)}
+.skip-link{
+  position:absolute;left:-9999px;top:auto
+}
+.skip-link:focus{
+  left:16px;top:16px;padding:.6rem .9rem;background:#000;color:#fff;z-index:10
+}
+.container{
+  width:min(var(--max), calc(100% - 80px));
+  margin-inline:auto;
+  padding:48px 60px;
+
+  background-color:rgba(255,255,255,0.94);
+
+  box-shadow:
+    0 0 25px rgba(0,0,0,0.22),
+    inset 0 0 90px rgba(139,69,19,0.08);
+
+  border:1px solid rgba(139,69,19,0.18);
+  border-radius:10px;
+
+  position:relative;
+}
+.container::before{
+  content:"";
+  position:absolute;
+  top:-6px;
+  left:-6px;
+  right:-6px;
+  bottom:-6px;
+  background:rgba(139,69,19,0.04);
+  border-radius:12px;
+  z-index:-1;
+}
+.site-header{
+  padding:56px 60px 32px;
+  background:linear-gradient(180deg,#f0e6da 0%, #f7f4ee 100%);
+  border-bottom:1px solid var(--line);
+}
+.eyebrow{
+  margin:0 0 8px;
+  font: 600 .9rem/1.2 system-ui, sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+.site-header h1{
+  margin:.2rem 0 .8rem;
+  font-size:clamp(2.1rem, 4.2vw, 3.35rem);
+  line-height:1.1;
+  letter-spacing:-.01em;
+  color:#1a1d21;
+}
+.meta{
+  margin:0;
+  color:var(--muted);
+  font: 400 1rem/1.5 system-ui, sans-serif;
+}
+.prose{
+  padding:36px 48px 80px;
+}
+.prose p, .prose ul, .prose ol, .prose blockquote, .table-wrap, .figure{
+  margin:0 0 1.05rem;
+}
+
+.prose ol{
+  list-style:decimal outside;
+  padding-left:1.6rem;
+}
+.prose ol li{
+  margin-bottom:.35rem;
+}
+.prose ol ol{
+  list-style:lower-alpha outside;
+}
+
+
+.prose h2[id^="capitolo-"]{
+  margin:4.2rem 0 1.25rem;
+  padding:1rem 1.2rem 1.1rem;
+  border:1px solid var(--line);
+  border-left:6px solid var(--accent);
+  border-radius:14px;
+  background:linear-gradient(180deg, #fbf7f1 0%, #f4ece0 100%);
+  box-shadow:0 8px 18px rgba(0,0,0,0.05);
+}
+.prose h2[id^="capitolo-"] .chapter-kicker{
+  margin:0;
+}
+.title-block{
+  margin:3.2rem 0 1.5rem;
+}
+.title-block h2{
+  margin:0;
+  padding:1rem 1.2rem 1.1rem;
+  border:1px solid var(--line);
+  border-left:6px solid var(--accent);
+  border-radius:14px;
+  background:linear-gradient(180deg, #fbf7f1 0%, #f4ece0 100%);
+  box-shadow:0 8px 18px rgba(0,0,0,0.05);
+  font-size:2.15rem;
+  line-height:1.12;
+  letter-spacing:-.01em;
+  text-transform:uppercase;
+}
+.prose h3{
+  margin:3rem 0 .8rem;
+  font-size:1.35rem;
+}
+.prose h4{
+  margin:1.4rem 0 .5rem;
+  font-size:1.12rem;
+}
+.label{
+  margin:1.25rem 0 .35rem;
+  font:600 .96rem/1.3 system-ui,sans-serif;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+blockquote{
+  margin-left:0;
+  padding:1rem 1.2rem;
+  background:var(--accent-soft);
+  border-left:4px solid var(--accent);
+}
+.doc-list, .timeline{
+  padding-left:1.2rem;
+}
+
+.timeline li{margin-bottom:.25rem}
+.table-wrap{
+  overflow:auto;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:8px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:.95rem;
+}
+th, td{
+  border:1px solid var(--line);
+  padding:.55rem .65rem;
+  text-align:left;
+  vertical-align:top;
+}
+th{
+  background:#f3ede4;
+  font-family:system-ui,sans-serif;
+}
+.figure{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:10px;
+}
+@media (max-width: 700px){
+  .site-header{
+    padding:40px 18px 24px;
+  }
+
+  .prose{
+    padding:24px 18px 56px;
+  }
+}
+
+
+/* --- Indice --- */
+.toc{
+  margin: 1rem 0 2rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border, #d8d8d8);
+  border-radius: 14px;
+  background: var(--surface-soft, #faf8f4);
+}
+.toc-title{
+  margin: 0 0 .8rem;
+  font-weight: 700;
+}
+.toc ol{
+  margin: 0;
+  padding-left: 1.25rem;
+}
+.toc li + li{
+  margin-top: .35rem;
+}
+.toc ol ol{
+  margin-top: .35rem;
+}
+.toc a{
+  text-decoration: none;
+}
+.toc a:hover{
+  text-decoration: underline;
+}
+
+/* --- Atto notarile --- */
+.notarial-gallery{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 1rem 0 1.25rem;
+}
+.notarial-gallery__item{
+  margin: 0;
+}
+.notarial-gallery__item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border, #d8d8d8);
+  border-radius: 10px;
+  background: #fff;
+}
+@media (max-width: 760px){
+  .notarial-gallery{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* --- Download --- */
+.download-block{
+  margin:0 0 1.2rem;
+  text-align:center;
+}
+.download-button{
+  display:inline-block;
+  padding:.8rem 1.05rem;
+  border-radius:999px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  font:600 .98rem/1.2 system-ui,sans-serif;
+}
+.download-button:hover{
+  opacity:.92;
+  text-decoration:none;
+}
+
+/* --- TOC without extra numbers --- */
+.toc ul{
+  margin:0;
+  padding-left:1.1rem;
+  list-style:none;
+}
+.toc > ul{
+  padding-left:0;
+}
+.toc li{
+  margin:.18rem 0;
+}
+.toc ul ul{
+  margin-top:.2rem;
+  padding-left:1rem;
+}
+
+/* --- Highlighted quotes --- */
+blockquote{
+  text-align:center;
+  border-left:none;
+  border-top:2px solid var(--accent);
+  border-bottom:2px solid var(--accent);
+  padding:1rem 1.2rem;
+}
+
+/* --- Attached documents marker --- */
+.doc-list{
+  list-style:none;
+  padding-left:0;
+}
+.doc-list li{
+  position:relative;
+  padding-left:1.2rem;
+  margin-bottom:.35rem;
+}
+.doc-list li::before{
+  content:"-";
+  position:absolute;
+  left:0;
+  color:var(--accent);
+}
+
+.fonte{
+  text-align:center;
+  font-size:0.90rem;
+  color:var(--muted);
+  margin-top:-0.35rem;
+  margin-bottom:.85rem;
+}
+
+/* --- Figures --- */
+.figure-pair{
+  display:grid;
+  grid-template-columns:repeat(2, auto);
+  justify-content:center;
+  gap:18px;
+  margin:0 auto 1rem;
+}
+
+.media-card{
+  margin:0;
+  text-align:center;
+}
+
+.media-card figcaption{
+  margin-top:.45rem;
+  text-align:center;
+  font:500 .9rem/1.35 system-ui, sans-serif;
+  color:var(--muted);
+}
+
+/* cornice delle immagini affiancate */
+.image-frame{
+  display:inline-flex;
+  padding:6px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+}
+
+.image-frame img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+  border-radius:10px;
+}
+
+.figure-pair--same-height .media-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.figure-pair--same-height .image-frame img{
+  height:320px;
+  width:auto;
+  max-width:100%;
+  object-fit:contain;
+}
+
+.figure-pair--tall .image-frame img{
+  height:350px;
+  width:auto;
+  max-width:100%;
+  object-fit:contain;
+}
+
+.figure-pair--compact .image-frame img{
+  height:260px;
+  width:auto;
+  max-width:100%;
+  object-fit:contain;
+}
+
+.figure-pair--same-height-caption .image-frame img{
+  height:240px;
+  width:auto;
+  max-width:100%;
+  object-fit:contain;
+}
+
+/* figure singole */
+.figure-single{
+  margin:0 auto 1rem;
+  text-align:center;
+  background:transparent;
+  border:none;
+  padding:0;
+}
+
+.figure-single img{
+  display:inline-block;
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+  background:#fff;
+  padding:6px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.12);
+}
+
+.figure-single--xsmall img{
+  max-width:340px;
+}
+
+.figure-single--small img{
+  max-width:430px;
+}
+
+.figure-single--medium img{
+  max-width:560px;
+}
+
+/* --- Notarial act --- */
+.notarial-pairs{
+  display:grid;
+  gap:14px;
+  margin:0 0 1rem;
+}
+
+.notarial-pair{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+}
+
+.notarial-shot{
+  margin:0;
+  padding:6px;
+  text-align:center;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--paper);
+}
+
+.notarial-shot img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+  background:#fff;
+  border-radius:10px;
+}
+
+.notarial-text{
+  margin:0;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:.9rem 1rem;
+  font-size:.98rem;
+  line-height:1.6;
+  text-align:left;
+}
+
+
+/* --- Generic figure wrapper --- */
+.figure-wrapper{
+  text-align:center;
+}
+
+.figure{
+  display:inline-block;
+  background:#fff;
+  padding:8px;
+  border-radius:6px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.15);
+  text-align:center;
+}
+
+.figure img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+}
+
+/* --- Years under paired figures --- */
+.figure-years{
+  display:grid;
+  grid-template-columns:repeat(2, auto);
+  justify-content:center;
+  gap:18px;
+  margin:.2rem 0 1rem;
+}
+
+.figure-years p{
+  margin:0;
+  text-align:center;
+  font:500 .95rem/1.35 system-ui, sans-serif;
+  color:var(--muted);
+}
+
+@media (max-width: 820px){
+  .notarial-pair{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width: 700px){
+  .figure-pair{
+    grid-template-columns:1fr;
+  }
+
+  .figure-pair--same-height .image-frame img,
+  .figure-pair--tall .image-frame img,
+  .figure-pair--compact .image-frame img,
+  .figure-pair--same-height-caption .image-frame img{
+    height:auto;
+  }
+
+  .figure-years{
+    grid-template-columns:1fr;
+    gap:6px;
+  }
+
+  .download-button{
+    width:100%;
+    max-width:360px;
+  }
+}
+
+.small-note{
+  font-size:0.9rem;
+  line-height:1.4;
+  color:var(--muted);
+}
+/* --- Sezione Ricordi --- */
+.memory-note{
+  font-size:1rem;
+  line-height:1.68;
+  color:var(--muted);
+  font-style:italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+.chapter-kicker::after{
+  content:". ";
+}
+
